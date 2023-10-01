@@ -1,7 +1,8 @@
-from flask import  Flask
+from flask import Flask
+from consulta import get_equipo
 app = Flask(__name__)
 
-@app.route("/")
+@app.route("/api/")
 def api():
     return get_equipo("medisono")
 
