@@ -10,10 +10,10 @@ def get_equipo(equipo, verbose: bool = False):
     for i in range(16):
         producto = r['rows'][i]['image']['alt']
         descripcion = r['rows'][i]['summary']
-        titulo = r['rows'][i]['title']
+        titul = r['rows'][i]['title']
         publicado=r['rows'][i]['published']
         if verbose:
-            print(f"{titulo} {producto} {descripcion} {publicado}")
+            print(f"{titul} {producto} {descripcion} {publicado}")
     return producto
 
 for t in equipos:
