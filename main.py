@@ -1,6 +1,6 @@
 import requests
 from consulta import get_equipo
-from mongo import MongoConnection
+from db import MongoConnection
 
 equipos = ["drtech", "medisono", "samsung", "ge", "canon", "philips"]
 db_client = MongoConnection().client

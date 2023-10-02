@@ -19,4 +19,8 @@ class MongoConecction:
         except Exception as e:
             print(e)
 if __name__ == '__main__':
-    Mongo().test_connection()
+    db().test_connection()
+
+
+class MongoConnection:
+    pass
